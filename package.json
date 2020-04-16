@@ -1,0 +1,31 @@
+{
+  "name": "ui-tools",
+  "version": "0.0.0",
+  "repository": "git@github.com:oftherivier/ui-tools.git",
+  "author": "@oftherivier",
+  "bin": {
+    "otr-ui": "./cli/index.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "otr lint",
+    "format": "otr format",
+    "checks": "yarn lint",
+    "release": "otr release"
+  },
+  "devDependencies": {
+    "@oftherivier/tools": "^0.1.4"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^4.2.0",
+    "postcss-cli": "^7.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^2.0.0",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
