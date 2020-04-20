@@ -4,9 +4,6 @@
   "repository": "git@github.com:oftherivier/ui-tools.git",
   "author": "@oftherivier",
   "main": "index.js",
-  "bin": {
-    "otr-ui": "./cli/index.js"
-  },
   "license": "MIT",
   "scripts": {
     "lint": "otr lint",
@@ -34,5 +31,10 @@
   },
   "devDependencies": {
     "react": "^16.13.1"
+  },
+  "renovate": {
+    "extends": [
+      "github>oftherivier/tools"
+    ]
   }
 }
