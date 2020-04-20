@@ -15,7 +15,7 @@
     "release": "otr release"
   },
   "dependencies": {
-    "@oftherivier/tools": "^0.1.4",
+    "@oftherivier/tools": "^0.1.8",
     "glob": "^7.1.6",
     "html-webpack-plugin": "^4.2.0",
     "postcss-cli": "^7.1.0",
