@@ -10,7 +10,7 @@
 }
 
 :start() {
-  webpack-dev-server --config ./webpack.dev.config.js
+  webpack-dev-server --config ./webpack.dev.config.js --open-page dev
 }
 
 run $@

@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const base = require('@oftherivier/tools/webpack')
 
 module.exports = (overrides = {}) =>
-  base([
+  base(({ rootDir }) => [
     {
       devServer: {
         hot: true,
@@ -22,13 +22,8 @@ module.exports = (overrides = {}) =>
           }
         }
       },
-      resolve: {
-        alias: {
-          [process.env.OTR_PKG_NAME]: './src/js'
-        }
-      }
     },
-    glob('./**/*.page.js').map(pageConf),
+    glob('./**/*.page.js', { cwd: rootDir }).map(pageConf),
     overrides
   ])
 
