@@ -18,10 +18,15 @@ module.exports = (overrides = {}) =>
         rules: {
           scss: {
             test: /.scss$/,
-            use: ['style-loader', 'sass-loader']
+            use: ['style-loader', 'css-loader', 'sass-loader']
           }
         }
       },
+      resolve: {
+        alias: {
+          styles: path.join(rootDir, 'src', 'scss')
+        }
+      }
     },
     glob('./**/*.page.js', { cwd: rootDir }).map(pageConf),
     overrides
@@ -30,7 +35,7 @@ module.exports = (overrides = {}) =>
 function pageConf(filepath) {
   return ({ append, env }) => ({
     entry: {
-      [filepath]: [path.join(__dirname, 'render.js'), filepath]
+      [filepath]: [path.join(__dirname, 'page.js'), filepath]
     },
     plugins: append([
       new HtmlWebpackPlugin({

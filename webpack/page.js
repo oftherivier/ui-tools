@@ -1,4 +1,5 @@
 /* eslint-env browser */
+require('styles/index.scss')
 const { createElement } = require('react')
 const { render, unmountComponentAtNode } = require('react-dom')
 
