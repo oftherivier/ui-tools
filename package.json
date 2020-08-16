@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@oftherivier/tools": "^0.1.26",
-    "css-loader": "^3.5.2",
+    "css-loader": "^4.0.0",
     "glob": "^7.1.6",
     "html-webpack-plugin": "^4.2.0",
     "postcss-cli": "^7.1.0",
