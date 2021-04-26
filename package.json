@@ -15,7 +15,7 @@
     "@oftherivier/tools": "^0.1.26",
     "css-loader": "^4.0.0",
     "glob": "^7.1.6",
-    "html-webpack-plugin": "^4.2.0",
+    "html-webpack-plugin": "^5.0.0",
     "postcss-cli": "^7.1.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-scss": "^2.0.0",
